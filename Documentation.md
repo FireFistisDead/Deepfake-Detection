@@ -1,8 +1,6 @@
-# Save the full documentation report as a markdown file
-doc_text = """
-# 🎙️ Audio Deepfake Detection — Research, Implementation & Analysis (Momenta Assessment)
+#  Audio Deepfake Detection — Research, Implementation & Analysis (Momenta Assessment)
 
-## 📁 Dataset Selection: ASVspoof2019 LA
+##  Dataset Selection: ASVspoof2019 LA
 
 ### Why this dataset?
 - **Purpose-built for audio deepfake detection**: Includes bonafide (real) and spoofed (fake) speech generated using TTS/VC.
@@ -11,21 +9,21 @@ doc_text = """
 
 ---
 
-## 🧠 Model Selection and Rationale
+##  Model Selection and Rationale
 
-### ✅ 1. RawNet2
+###  1. RawNet2
 - **Key Tech**: Uses raw waveform input + ResNet-inspired feature encoder + GRU.
 - **Why**: Minimal preprocessing, strong baseline with public weights.
 - **Performance**: EER ~1.7% on ASVspoof2019 LA.
 - **Limitation**: Computationally heavy.
 
-### ✅ 2. AASIST (Advanced Anti-Spoofing Integrated System)
+###  2. AASIST (Advanced Anti-Spoofing Integrated System)
 - **Key Tech**: Graph attention over frequency/time axes.
 - **Why**: Recent SOTA, highly interpretable.
 - **Performance**: EER ~1.5% on ASVspoof2021 LA.
 - **Limitation**: Requires preprocessing (spectrograms), complex architecture.
 
-### ✅ 3. LCNN (Light CNN)
+###  3. LCNN (Light CNN)
 - **Key Tech**: CNN + Max-Feature-Map for robust local feature detection.
 - **Why**: Lightweight, fast to train, common baseline in spoof detection.
 - **Performance**: EER ~3.3% (older but useful for comparison).
@@ -33,7 +31,7 @@ doc_text = """
 
 ---
 
-## ❌ Why Other Models Were Excluded
+##  Why Other Models Were Excluded
 
 - **X-vector + PLDA**: Strong for speaker ID, weak on deepfakes.
 - **ResNet34/CRNN**: Require heavier tuning + augmentation.
@@ -41,7 +39,7 @@ doc_text = """
 
 ---
 
-## 🛠️ Implementation Overview
+##  Implementation Overview
 
 Each model was fine-tuned for 5 epochs on a subset of ASVspoof2019 LA using pre-trained weights or baseline config:
 
@@ -58,7 +56,7 @@ Each notebook covers:
 
 ---
 
-## 🔬 Observations & Strengths
+##  Observations & Strengths
 
 | Model    | Strengths | Observed Weaknesses |
 |----------|-----------|----------------------|
@@ -68,7 +66,7 @@ Each notebook covers:
 
 ---
 
-## 💭 Reflections
+##  Reflections
 
 ### Biggest Challenge
 - Ensuring reproducibility and minimal RAM footprint during fine-tuning on RawNet2/AASIST.
@@ -88,4 +86,4 @@ Each notebook covers:
 
 ---
 
-## 📦 Folder Structure
+##  Folder Structure  
