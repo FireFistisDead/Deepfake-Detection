@@ -1,4 +1,4 @@
-# Awesome Audio Deepfake Detection Resources
+# Audio Deepfake Detection Resources
 
 A curated list of tools, papers, and resources related to audio deepfake detection, with a focus on fine-tuning deep learning models such as AASIST, RawNet2, and LCNN.
 
