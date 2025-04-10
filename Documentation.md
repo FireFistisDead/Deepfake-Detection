@@ -45,9 +45,9 @@ Each model was fine-tuned for 5 epochs on a subset of ASVspoof2019 LA using pre-
 
 | Model    | Notebook Location |
 |----------|------------------|
-| RawNet2  | `RawNet2_Finetune.ipynb` |
-| AASIST   | `AASIST_Finetune.ipynb`  |
-| LCNN     | `LCNN_Finetune.ipynb`    |
+| RawNet2  | `finetune_model.py` |
+| AASIST   | `yet-to-implement`  |
+| LCNN     | `yet-to-implement`    |
 
 Each notebook covers:
 - Dataset loading
